@@ -1,0 +1,25 @@
+<!-- dashboard.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Data Dashboard</title>
+</head>
+<body>
+    <h1>Industrial Data Dashboard</h1>
+    <table>
+        <tr>
+            <th>Timestamp</th>
+            <th>Sensor Value</th>
+        </tr>
+        {% for entry in sensor_data %}
+        <tr>
+            <td>{{ entry[0] }}</td>
+            <td>{{ entry[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
